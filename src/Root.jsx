@@ -1,11 +1,12 @@
 import React from 'react';
+import Header from './components/Header/Header';
+import { Outlet } from 'react-router-dom';
 
 const Root = () => {
     return (
         <div>
-            <h1 className="text-3xl font-bold underline">
-                Hello world! j J
-            </h1>
+            <Header />
+            <Outlet />
         </div>
     );
 };
