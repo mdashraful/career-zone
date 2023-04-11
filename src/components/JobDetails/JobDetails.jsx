@@ -7,6 +7,8 @@ import { CalendarDaysIcon } from "@heroicons/react/24/outline";
 import { MapPinIcon } from "@heroicons/react/24/outline";
 import { PhoneIcon } from "@heroicons/react/24/outline";
 
+import { handleToApply } from '../../utiliites';
+
 const JobDetails = () => {
     const data = useLoaderData();
     console.log(data);
