@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -11,9 +10,9 @@ const Header = () => {
                 </Link>
             </div>
             <div className='text-xl'>
-                <a href="/statistics" className='px-5'>Statistics</a>
-                <a href="/applied-jobs" className='px-5'>Applied Jobs</a>
-                <a href="/blog" className='px-5'>Blog</a>
+                <NavLink to="/statistics" className='px-5'>Statistics</NavLink>
+                <NavLink to="/applied-jobs" className='px-5'>Applied Jobs</NavLink>
+                <NavLink to="/blog" className='px-5'>Blog</NavLink>
             </div>
             <div>
                 <button className='btn-primary'>Star Applying</button>
