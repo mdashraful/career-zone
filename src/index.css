@@ -7,3 +7,9 @@
 html {
   font-family: Manrope;
 }
+
+@layer components {
+  .btn-primary {
+    @apply px-7 py-5 bg-primary text-white rounded-lg font-semibold;
+  }
+}
