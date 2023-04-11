@@ -1,6 +1,7 @@
 import React, { createContext, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
+import Banner from '../Banner/Banner';
 
 export const JobsContext = createContext([]);
 
@@ -11,6 +12,10 @@ const Home = () => {
     return (
         <JobsContext.Provider value={jobs}>
             <div>
+                <div className='bg-gray-50 md:px-24 px-5 m-auto'>
+                    <Banner />
+                </div>
+
                 <div className='md:px-24 px-5 m-auto py-28'>
                     <div className='text-center mb-7'>
                         <h2 className='text-5xl font-bold mb-3'>Job Category List</h2>

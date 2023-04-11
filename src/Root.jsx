@@ -9,7 +9,7 @@ const Root = () => {
         <div className=''>
             <div className='bg-gray-50 md:px-24 px-5 m-auto pt-12'>
                 <Header />
-                <Banner />
+
                 <Toaster
                     position="top-center"
                     reverseOrder={false}

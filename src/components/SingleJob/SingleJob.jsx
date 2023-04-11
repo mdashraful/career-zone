@@ -1,6 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/outline";
 import { Link } from 'react-router-dom';
 
 const SingleJob = ({ job }) => {
@@ -15,12 +14,15 @@ const SingleJob = ({ job }) => {
                     <h5 className='mb-2 text-2xl font-bold'>{job.jobTitle}</h5>
                     <p>{job.companyName}</p>
                 </div>
-                <div className='my-2 flex'>
-                    <div>
-                        <FontAwesomeIcon icon={faCoffee} />{job.location}
+                <div className='my-4'>
+                    <span className='text-primary rounded border py-2 px-3 border-primary'>{job.duration}</span>
+                </div>
+                <div className='my-2 flex gap-3'>
+                    <div className='flex items-center justify-center'>
+                        <MapPinIcon className="h-6 w-6 me-1 text-gray-500" />{job.location}
                     </div>
-                    <div>
-                        {job.salary}
+                    <div className='flex items-center justify-center'>
+                        <CurrencyDollarIcon className="h-6 w-6 me-1 text-gray-500" />{job.salary}
                     </div>
                 </div>
 

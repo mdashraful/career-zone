@@ -6,6 +6,9 @@ import ErrorPage from './error-page'
 import Root from './Root'
 import Home from './components/Home/Home'
 import JobDetails from './components/JobDetails/JobDetails'
+import AppliedJobs from './components/AppliedJobs/AppliedJobs'
+import Statistics from './components/Statistics/Statistics'
+import Blog from './components/Blog/Blog'
 
 const router = createBrowserRouter([
   {
@@ -32,6 +35,18 @@ const router = createBrowserRouter([
             return singleData;
           }
         }
+      },
+      {
+        path: 'applied-jobs',
+        element: <AppliedJobs />
+      },
+      {
+        path: 'statistics',
+        element: <Statistics />
+      },
+      {
+        path: 'blog',
+        element: <Blog />
       }
     ]
   }
