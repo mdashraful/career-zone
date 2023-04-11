@@ -1,14 +1,15 @@
-import React, { createContext } from 'react';
+import React, { createContext, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import FeaturedJobs from '../FeaturedJobs/FeaturedJobs';
 
 export const JobsContext = createContext([]);
 
 const Home = () => {
-    const allJobs = useLoaderData();
+    const jobs = useLoaderData();
     // console.log(data);
+
     return (
-        <JobsContext.Provider value={allJobs}>
+        <JobsContext.Provider value={jobs}>
             <div>
                 <div className='md:px-24 px-5 m-auto py-28'>
                     <div className='text-center mb-7'>
@@ -58,9 +59,7 @@ const Home = () => {
                     </div>
                 </div>
 
-
                 <FeaturedJobs></FeaturedJobs>
-
 
             </div>
         </JobsContext.Provider>
