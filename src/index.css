@@ -10,6 +10,6 @@ html {
 
 @layer components {
   .btn-primary {
-    @apply px-7 py-4 bg-primary text-white rounded-lg font-semibold;
+    @apply px-7 py-4 bg-primary text-white rounded-lg font-bold;
   }
 }

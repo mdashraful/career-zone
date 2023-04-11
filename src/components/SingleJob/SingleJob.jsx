@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 const SingleJob = ({ job }) => {
 
@@ -22,7 +23,8 @@ const SingleJob = ({ job }) => {
                         {job.salary}
                     </div>
                 </div>
-                <button className='btn-primary mt-2'>View Details</button>
+
+                <Link to={`/job-details/${job.id}`}><button className='btn-primary mt-2'>View Details</button></Link>
             </div>
         </div>
     );

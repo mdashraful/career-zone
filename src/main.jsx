@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import ErrorPage from './error-page'
 import Root from './Root'
 import Home from './components/Home/Home'
+import JobDetails from './components/JobDetails/JobDetails'
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,22 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
-        loader: () => fetch('fakeDB.json')
+        loader: () => fetch('/fakeData.json')
+      },
+      {
+        path: 'job-details/:id',
+        element: <JobDetails />,
+        loader: async ({ params }) => {
+          const res = await fetch('/fakeData.json');
+          const data = await res.json();
+          const singleData = data.find(job => job.id == params.id);
+
+          if (!singleData) {
+            return {}
+          } else {
+            return singleData;
+          }
+        }
       }
     ]
   }
