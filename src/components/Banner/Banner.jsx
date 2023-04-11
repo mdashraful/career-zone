@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className='pt-10 flex flex-col md:flex-row gap-5 items-center justify-center'>
+        <div className='pt-10 flex flex-col md:flex-row gap-12 items-center justify-center text-center md:text-start'>
             <div>
                 <h1 className='text-7xl font-extrabold'>
                     One Step<br />Closer To Your<span className='block text-primary'>Dream Job</span>
@@ -11,7 +11,7 @@ const Banner = () => {
                 <button className='btn-primary mt-8'>Get Started</button>
             </div>
             <div>
-                <img src="/hardy.png" alt="" />
+                <img className='h-full w-full' src="/hardy.png" alt="" />
             </div>
         </div>
     );

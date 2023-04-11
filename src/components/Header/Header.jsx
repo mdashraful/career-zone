@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className='flex flex-col md:flex-row items-center md:justify-between gap-2'>
             <div>
-                <h5 className='text-3xl font-extrabold'>CareerZone</h5>
+                <h5 className='text-4xl font-extrabold'>CareerZone</h5>
             </div>
             <div className='text-xl'>
                 <a href="/statistics" className='px-5'>Statistics</a>
