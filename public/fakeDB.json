@@ -1,7 +1,7 @@
 [
     {
         "id": 101,
-        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVMgQnWnU3HXntdAGPvbLa9J5ahWH-6-bmRM3phxVmZw&s",
+        "logo": "./Logo/netflix-4 1.png",
         "jobTitle": "Senior Custom Designer",
         "companyName": "Netflix",
         "jobType": "Remote",
@@ -13,13 +13,17 @@
         "education": "Bachelor degree to complete any reputational university.",
         "experiences": "2-3 Years in this field.",
         "contact": [
-            {"phone": "+880557423"},
-            {"email": "netflix@gmail.com"}
+            {
+                "phone": "+880557423"
+            },
+            {
+                "email": "netflix@gmail.com"
+            }
         ]
     },
     {
         "id": 102,
-        "logo": "https://thumbs.dreamstime.com/b/tesla-logo-editorial-illustrative-white-background-eps-download-vector-jpeg-tesla-logo-239841778.jpg",
+        "logo": "./Logo/tesla-9 1.png",
         "jobTitle": "Senior Engineer",
         "companyName": "Tesla",
         "jobType": "Remote",
@@ -31,13 +35,17 @@
         "education": "Bachelor degree to complete any reputational university.",
         "experiences": "2-3 Years in this field.",
         "contact": [
-            {"phone": "+88346768433"},
-            {"email": "tesla@gmail.com"}
+            {
+                "phone": "+88346768433"
+            },
+            {
+                "email": "tesla@gmail.com"
+            }
         ]
     },
     {
         "id": 103,
-        "logo": "https://brand.linkedin.com/content/dam/brand/site/img/logo/logo-hero.png",
+        "logo": "./Logo/640px-Nokia_2023.svg.png",
         "jobTitle": "Technical Database Engineer",
         "companyName": "Linkedin",
         "jobType": "Onsite",
@@ -49,13 +57,17 @@
         "education": "Bachelor degree to complete any reputational university.",
         "experiences": "2-3 Years in this field.",
         "contact": [
-            {"phone": "+88346768433"},
-            {"email": "linkedin@gmail.com"}
+            {
+                "phone": "+88346768433"
+            },
+            {
+                "email": "linkedin@gmail.com"
+            }
         ]
     },
     {
         "id": 104,
-        "logo": "https://thumbs.dreamstime.com/b/new-google-logo-vector-illustration-white-background-editorial-149046989.jpg",
+        "logo": "./Logo/google-1-1 1.png",
         "jobTitle": "Software Engineer",
         "companyName": "Google LLC.",
         "jobType": "Remote",
@@ -67,13 +79,17 @@
         "education": "Bachelor degree to complete any reputational university.",
         "experiences": "1-2 Years in this field.",
         "contact": [
-            {"phone": "+2423465656"},
-            {"email": "google@gmail.com"}
+            {
+                "phone": "+2423465656"
+            },
+            {
+                "email": "google@gmail.com"
+            }
         ]
     },
     {
         "id": 105,
-        "logo": "https://thumbs.dreamstime.com/b/simple-vector-filled-flat-amazon-icon-logo-solid-black-pictogram-isolated-white-background-amazon-logo-159029074.jpg",
+        "logo": "./Logo/640px-Gucci_Logo.svg.png",
         "jobTitle": "Senior Product Designer",
         "companyName": "Amazon",
         "jobType": "Remote",
@@ -85,13 +101,17 @@
         "education": "Bachelor degree to complete any reputational university.",
         "experiences": "2-3 Years in this field.",
         "contact": [
-            {"phone": "+42342434"},
-            {"email": "amazon@gmail.com"}
+            {
+                "phone": "+42342434"
+            },
+            {
+                "email": "amazon@gmail.com"
+            }
         ]
     },
     {
         "id": 106,
-        "logo": "https://i.pinimg.com/736x/12/ac/ae/12acae4a3cfbf8112900cef2e333f5e5--cellphone-wallpapers-wallpaper-backgrounds.jpg",
+        "logo": "./Logo/640px-LinkedIn_2021.svg.png",
         "jobTitle": "Web Designer",
         "companyName": "Gucci",
         "jobType": "Remote",
@@ -103,8 +123,12 @@
         "education": "Bachelor degree to complete any reputational university.",
         "experiences": "Fresher can be applied.",
         "contact": [
-            {"phone": "+42342434"},
-            {"email": "gucci@gmail.com"}
+            {
+                "phone": "+42342434"
+            },
+            {
+                "email": "gucci@gmail.com"
+            }
         ]
     }
 ]
