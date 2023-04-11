@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const SingleJob = ({ job }) => {
 
@@ -13,7 +15,7 @@ const SingleJob = ({ job }) => {
             </div>
             <div className='my-2 flex'>
                 <div>
-                    {job.location}
+                    <FontAwesomeIcon icon={faCoffee} />{job.location}
                 </div>
                 <div>
                     {job.salary}
