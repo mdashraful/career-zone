@@ -6,7 +6,7 @@ export const handleToApply = (id) => {
   const job = id;
 
   if (exists) {
-    const alreadyApplied = exists.find((a) => a.id == id);
+    const alreadyApplied = exists.find((a) => a == id);
     if (alreadyApplied) {
       toast.success("You Already Applied Here.");
       return;

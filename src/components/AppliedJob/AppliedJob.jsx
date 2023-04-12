@@ -14,7 +14,8 @@ const AppliedJob = ({ appliedJob }) => {
                     <div>
                         <h5 className='text-2xl font-bold'>{jobTitle}</h5>
                         <p>{companyName}</p>
-                        <div className='my-4'>
+                        <div className='my-4 flex gap-3'>
+                            <span className='text-primary rounded border py-2 px-3 border-primary'>{jobType}</span>
                             <span className='text-primary rounded border py-2 px-3 border-primary'>{duration}</span>
                         </div>
                         <div className='my-2 flex gap-3'>

@@ -3,32 +3,41 @@ import SinglePageBanner from '../SinglePageBanner/SinglePageBanner';
 import { getAppliedJobs } from '../../utilities/fakedb';
 import AppliedJob from '../AppliedJob/AppliedJob';
 import { JobsContext } from '../Home/Home';
+import toast, { Toaster } from "react-hot-toast";
 
 const AppliedJobs = () => {
-    const [appliedAllJobs, setAppliedAllJob] = useState([]);
     const allJobs = useContext(JobsContext);
+    const [appliedAllJobs, setAppliedAllJobs] = useState([]);
+    const [appliedJobsArray, setAppliedJobsArray] = useState([]);
     const appliedJobs = getAppliedJobs();
 
-    let allAppliedJobs = [];
+    let matchData = [];
     useEffect(() => {
-        if (appliedJobs.length) {
+        if (appliedJobs.length > 0) {
             for (const id of appliedJobs) {
                 const allApplied = allJobs.find((jobs) => jobs.id === id);
-                allAppliedJobs.push(allApplied);
+                matchData.push(allApplied);
             }
-            setAppliedAllJob(allAppliedJobs);
+            setAppliedAllJobs(matchData);
+            setAppliedJobsArray(matchData);
+        } else {
+            toast.error('You are not applied yet!')
         }
-    }, [appliedAllJobs]);
-
+        // console.log(matchData);
+    }, []);
 
     const handleFilter = (type) => {
-        const filterApplied = [];
-        if (type === 'remote') {
 
-        } else if (type === 'onsite') {
-
+        let filterApplied = [];
+        if (type === 'Remote') {
+            console.log(type);
+            filterApplied = appliedJobsArray.filter((jobs) => jobs.jobType === 'Remote')
+            setAppliedAllJobs(filterApplied);
+        } else if (type === 'Onsite') {
+            console.log(type);
+            filterApplied = appliedJobsArray.filter((jobs) => jobs.jobType === 'Onsite')
+            setAppliedAllJobs(filterApplied);
         }
-
         console.log(filterApplied);
     }
 
@@ -41,12 +50,12 @@ const AppliedJobs = () => {
                 <div className='text-right mb-3'>
                     <select className='border rounded p-3' onChange={(event) => handleFilter(event.target.value)}>
                         <option className='hidden'>Filter By </option>
-                        <option value="remote">Remote</option>
-                        <option value="onsite">Onside</option>
+                        <option value="Remote">Remote</option>
+                        <option value="Onsite">Onside</option>
                     </select>
                 </div>
                 {
-                    appliedAllJobs.length && appliedAllJobs.map((appliedJob, index) => <AppliedJob key={index} appliedJob={appliedJob}></AppliedJob>)
+                    appliedAllJobs.length > 0 && appliedAllJobs.map((appliedJob, index) => <AppliedJob key={index} appliedJob={appliedJob}></AppliedJob>)
                 }
             </div>
         </div>
