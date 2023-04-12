@@ -9,9 +9,11 @@ export default function ErrorPage() {
 
     return (
         <div id="error-page">
-            <h1 className="text-center text-3xl text-red-600 font-bold mt-10">Oops!</h1>
-            <h2 className="text-center text-2xl text-red-600 font-bold mt-5">{error.statusText || error.message}</h2>
-            <Lottie className="h-96 mt-5" animationData={errorAnimation} loop={true}></Lottie>
+            <div className="mt-48">
+                <h1 className="text-center text-3xl text-red-600 font-bold mt-10">Oops!</h1>
+                <h2 className="text-center text-2xl text-red-600 font-bold mt-5">{error.statusText || error.message}</h2>
+                <Lottie className="h-96 mt-5" animationData={errorAnimation} loop={true}></Lottie>
+            </div>
         </div>
     );
 }

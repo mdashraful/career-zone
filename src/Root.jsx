@@ -4,6 +4,7 @@ import { Outlet, useLoaderData } from 'react-router-dom';
 import Banner from './components/Banner/Banner';
 import toast, { Toaster } from "react-hot-toast";
 import { JobsContext } from './components/Home/Home';
+import Footer from './components/Footer/Footer';
 
 const Root = () => {
     const jobs = useLoaderData();
@@ -20,6 +21,7 @@ const Root = () => {
                     />
                 </div>
                 <Outlet />
+                <Footer />
             </div>
         </JobsContext.Provider>
 
