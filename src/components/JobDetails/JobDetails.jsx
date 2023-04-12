@@ -16,7 +16,7 @@ const JobDetails = () => {
                 <SinglePageBanner>Job Details</SinglePageBanner>
             </div>
             <div className='md:px-24 px-5 m-auto py-28'>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-5 p-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                     <div className="col-span-2">
                         <p className="text-gray-700 mb-5">
                             <span className="font-bold text-black">Job Description: </span>

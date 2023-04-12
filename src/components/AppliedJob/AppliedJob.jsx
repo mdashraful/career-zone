@@ -7,7 +7,7 @@ const AppliedJob = ({ appliedJob }) => {
     const { id, logo, jobTitle, companyName, jobType, location, salary, duration, description, responsibility, education, experiences, contact } = appliedJob;
     return (
         <div>
-            <div className='border rounded-md p-4 md:flex items-center justify-between gap-5 mb-5'>
+            <div className='border rounded-md p-4 flex md:flex-row flex-col items-center justify-between gap-5 mb-5'>
                 <div className='flex items-center gap-5'>
                     <div className='h-48 rounded-md w-48 flex items-center justify-center bg-gray-50'>
                         <img className='p-3' src={logo} alt="" />
@@ -29,7 +29,7 @@ const AppliedJob = ({ appliedJob }) => {
                         </div>
                     </div>
                 </div>
-                <div className='text-center'>
+                <div className='text-center mb-4'>
                     <Link to={`/job-details/${id}`} className='btn-primary me-5' >View Details</Link>
                 </div>
             </div>
