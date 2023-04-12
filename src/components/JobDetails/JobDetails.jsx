@@ -35,7 +35,7 @@ const JobDetails = () => {
                         </div>
                     </div>
                     <div className=''>
-                        <div className="bg-sky-50 md:p-5 bg-indigo-50 rounded-md">
+                        <div className="bg-sky-50 p-5 bg-indigo-50 rounded-md">
                             <h5 className="font-bold text-lg">Job Details</h5>
                             <hr className="my-5 border" />
                             <p className="flex gap-2 text-gray-600 mb-3"> <CurrencyDollarIcon className="h-6 w-6 text-primary" /> <span className="font-bold">Salary:</span>{salary} (Per Month)
