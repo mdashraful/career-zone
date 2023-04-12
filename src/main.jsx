@@ -14,12 +14,12 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
+    loader: () => fetch('/fakeData.json'),
     errorElement: < ErrorPage />,
     children: [
       {
         path: '/',
         element: <Home />,
-        loader: () => fetch('/fakeData.json')
       },
       {
         path: 'job-details/:id',

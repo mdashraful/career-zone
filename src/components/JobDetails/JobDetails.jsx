@@ -8,7 +8,7 @@ import SinglePageBanner from '../SinglePageBanner/SinglePageBanner';
 
 const JobDetails = () => {
     const data = useLoaderData();
-    console.log(data);
+    // console.log(data);
     const { id, logo, jobTitle, companyName, jobType, location, salary, duration, description, responsibility, education, experiences, contact } = data;
     return (
         <div>
@@ -47,7 +47,7 @@ const JobDetails = () => {
                             <p className="flex gap-2 text-gray-600 mb-3"><EnvelopeIcon className="h-6 w-6 text-primary" /> <span className="font-bold">Email: </span>{contact[1].email}</p>
                             <p className="flex gap-2 text-gray-600 "><MapPinIcon className="h-6 w-6 text-primary" /> <span className="font-bold">Address:</span>{location}</p>
                         </div>
-                        <button onClick={() => handleToApply(id, companyName, jobType)} to='' className="btn-primary w-full mt-3">Apply Now</button>
+                        <button onClick={() => handleToApply(id)} to='' className="btn-primary w-full mt-3">Apply Now</button>
                     </div>
                 </div>
             </div>

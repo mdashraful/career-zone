@@ -21,14 +21,14 @@ const removeFromDb = (id) => {
 };
 
 const getAppliedJobs = () => {
-  let appliedJObs = [];
+  let appliedJobs = [];
 
   //get the shopping cart from local storage
-  const applied = localStorage.getItem("appliedJobs");
+  const applied = localStorage.getItem("applyJobs");
   if (applied) {
-    appliedJObs = JSON.parse(applied);
+    appliedJobs = JSON.parse(applied);
   }
-  return appliedJObs;
+  return appliedJobs;
 };
 
 const deleteShoppingCart = () => {
