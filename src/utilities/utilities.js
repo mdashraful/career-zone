@@ -1,7 +1,7 @@
 import toast from "react-hot-toast";
 
 export const handleToApply = (id, name, jobType) => {
-  const exists = JSON.parse(localStorage.getItem("apply"));
+  const exists = JSON.parse(localStorage.getItem("applyJobs"));
   let applied = [];
   const job = { id, name, jobType };
 
@@ -12,10 +12,10 @@ export const handleToApply = (id, name, jobType) => {
       return;
     } else {
       applied.push(...exists, job);
-      localStorage.setItem("apply", JSON.stringify(applied));
+      localStorage.setItem("applyJobs", JSON.stringify(applied));
     }
   } else {
     applied.push(job);
-    localStorage.setItem("apply", JSON.stringify(applied));
+    localStorage.setItem("applyJobs", JSON.stringify(applied));
   }
 };

@@ -1,13 +1,9 @@
 import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 
-import { CurrencyDollarIcon } from "@heroicons/react/24/outline";
-import { EnvelopeIcon } from "@heroicons/react/24/outline";
-import { CalendarDaysIcon } from "@heroicons/react/24/outline";
-import { MapPinIcon } from "@heroicons/react/24/outline";
-import { PhoneIcon } from "@heroicons/react/24/outline";
+import { CurrencyDollarIcon, EnvelopeIcon, CalendarDaysIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
-import { handleToApply } from '../../utiliites';
+import { handleToApply } from '../../utilities/utilities';
 import SinglePageBanner from '../SinglePageBanner/SinglePageBanner';
 
 const JobDetails = () => {

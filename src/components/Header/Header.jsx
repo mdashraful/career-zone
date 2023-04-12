@@ -10,7 +10,7 @@ const Header = () => {
                     <h5 className='text-4xl font-extrabold'>CareerZone</h5>
                 </Link>
             </div>
-            <div className='text-xl'>
+            <div className='text-xl text-center'>
                 <NavLink to="/statistics" className={({ isActive }) =>
                     isActive ? "active px-5" : "px-5 hover:text-primary"
                 }>Statistics</NavLink>
