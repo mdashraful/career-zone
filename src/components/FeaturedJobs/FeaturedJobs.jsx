@@ -20,7 +20,7 @@ const FeaturedJobs = () => {
             </div>
             <div className="text-center mt-10">
                 {
-                    !seeAllJobs ? <button className='btn-primary' onClick={() => setSeeAllJobs(true)}>See All Jobs</button> : <button className='btn-primary' onClick={() => setSeeAllJobs(false)}>See Less Jobs</button>
+                    !seeAllJobs ? <button className='btn-primary hover:bg-secondary' onClick={() => setSeeAllJobs(true)}>See All Jobs</button> : <button className='btn-primary' onClick={() => setSeeAllJobs(false)}>See Less Jobs</button>
                 }
             </div>
         </div>

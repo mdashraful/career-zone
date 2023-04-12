@@ -8,7 +8,7 @@ const Banner = () => {
                     One Step<br />Closer To Your<span className='block text-primary'>Dream Job</span>
                 </h1>
                 <p className='mt-6'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
-                <button className='btn-primary mt-8'>Get Started</button>
+                <button className='btn-primary mt-8 hover:bg-secondary'>Get Started</button>
             </div>
             <div>
                 <img className='h-full w-full' src="/hardy.png" alt="" />

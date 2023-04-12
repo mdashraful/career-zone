@@ -22,7 +22,7 @@ const Header = () => {
                 }>Blog</NavLink>
             </div>
             <div>
-                <button className='btn-primary'>Star Applying</button>
+                <button className='btn-primary hover:bg-secondary'>Star Applying</button>
             </div>
         </div>
     );

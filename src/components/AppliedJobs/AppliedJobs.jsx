@@ -10,13 +10,15 @@ const AppliedJobs = () => {
     const appliedJobs = getAppliedJobs();
 
     let allAppliedJobs = [];
-    if (appliedJobs.length) {
-        for (const id of appliedJobs) {
-            const allApplied = allJobs.find((jobs) => jobs.id === id);
-            allAppliedJobs.push(allApplied);
+    useEffect(() => {
+        if (appliedJobs.length) {
+            for (const id of appliedJobs) {
+                const allApplied = allJobs.find((jobs) => jobs.id === id);
+                allAppliedJobs.push(allApplied);
+            }
+            setAppliedAllJob(allAppliedJobs);
         }
-        setAppliedAllJob(allAppliedJobs);
-    }
+    }, [appliedAllJobs]);
 
 
     const handleFilter = (type) => {
@@ -32,7 +34,7 @@ const AppliedJobs = () => {
 
     return (
         <div>
-            <div className='bg-gray-50 md:px-24 px-5 m-auto'>
+            <div className='bg-indigo-50 md:px-24 px-5 m-auto'>
                 <SinglePageBanner>Applied Jobs</SinglePageBanner>
             </div>
             <div className='md:px-24 px-5 m-auto py-28 '>

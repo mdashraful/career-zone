@@ -47,7 +47,7 @@ const JobDetails = () => {
                             <p className="flex gap-2 text-gray-600 mb-3"><EnvelopeIcon className="h-6 w-6 text-primary" /> <span className="font-bold">Email: </span>{contact[1].email}</p>
                             <p className="flex gap-2 text-gray-600 "><MapPinIcon className="h-6 w-6 text-primary" /> <span className="font-bold">Address:</span>{location}</p>
                         </div>
-                        <button onClick={() => handleToApply(id)} to='' className="btn-primary w-full mt-3">Apply Now</button>
+                        <button onClick={() => handleToApply(id)} to='' className="btn-primary hover:bg-secondary w-full mt-3">Apply Now</button>
                     </div>
                 </div>
             </div>

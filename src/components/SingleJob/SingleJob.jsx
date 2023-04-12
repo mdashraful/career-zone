@@ -14,7 +14,8 @@ const SingleJob = ({ job }) => {
                     <h5 className='mb-2 text-2xl font-bold'>{job.jobTitle}</h5>
                     <p>{job.companyName}</p>
                 </div>
-                <div className='my-4'>
+                <div className='my-4 md:flex gap-3'>
+                    <span className='text-primary rounded border py-2 px-3 border-primary'>{job.jobType}</span>
                     <span className='text-primary rounded border py-2 px-3 border-primary'>{job.duration}</span>
                 </div>
                 <div className='my-2 flex gap-3'>
@@ -26,7 +27,7 @@ const SingleJob = ({ job }) => {
                     </div>
                 </div>
 
-                <Link to={`/job-details/${job.id}`}><button className='btn-primary mt-2'>View Details</button></Link>
+                <Link to={`/job-details/${job.id}`}><button className='btn-primary hover:bg-secondary mt-2'>View Details</button></Link>
             </div>
         </div>
     );
