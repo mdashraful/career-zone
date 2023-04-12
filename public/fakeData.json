@@ -22,30 +22,8 @@
         ]
     },
     {
-        "id": 102,
-        "logo": "./Logo/tesla-9 1.png",
-        "jobTitle": "Senior Engineer",
-        "companyName": "Tesla",
-        "jobType": "Remote",
-        "location": "Chittagong, Bangladesh",
-        "salary": "55k-62k",
-        "duration": "Full-time",
-        "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
-        "responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
-        "education": "Bachelor degree to complete any reputational university.",
-        "experiences": "2-3 Years in this field.",
-        "contact": [
-            {
-                "phone": "+88346768433"
-            },
-            {
-                "email": "tesla@gmail.com"
-            }
-        ]
-    },
-    {
         "id": 103,
-        "logo": "./Logo/640px-Nokia_2023.svg.png",
+        "logo": "./Logo/640px-LinkedIn_2021.svg.png",
         "jobTitle": "Technical Database Engineer",
         "companyName": "Linkedin",
         "jobType": "Onsite",
@@ -89,9 +67,9 @@
     },
     {
         "id": 105,
-        "logo": "./Logo/640px-Gucci_Logo.svg.png",
+        "logo": "./Logo/640px-Nokia_2023.svg.png",
         "jobTitle": "Senior Product Designer",
-        "companyName": "Amazon",
+        "companyName": "Nokia",
         "jobType": "Remote",
         "location": "Rajshahi, Bangladesh",
         "salary": "35k-45k",
@@ -105,13 +83,13 @@
                 "phone": "+42342434"
             },
             {
-                "email": "amazon@gmail.com"
+                "email": "nokia@gmail.com"
             }
         ]
     },
     {
         "id": 106,
-        "logo": "./Logo/640px-LinkedIn_2021.svg.png",
+        "logo": "./Logo/640px-Gucci_Logo.svg.png",
         "jobTitle": "Web Designer",
         "companyName": "Gucci",
         "jobType": "Remote",
@@ -128,6 +106,28 @@
             },
             {
                 "email": "gucci@gmail.com"
+            }
+        ]
+    },
+    {
+        "id": 102,
+        "logo": "./Logo/tesla-9 1.png",
+        "jobTitle": "Senior Engineer",
+        "companyName": "Tesla",
+        "jobType": "Remote",
+        "location": "Chittagong, Bangladesh",
+        "salary": "55k-62k",
+        "duration": "Full-time",
+        "description": "A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
+        "responsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
+        "education": "Bachelor degree to complete any reputational university.",
+        "experiences": "2-3 Years in this field.",
+        "contact": [
+            {
+                "phone": "+88346768433"
+            },
+            {
+                "email": "tesla@gmail.com"
             }
         ]
     }

@@ -10,7 +10,7 @@ const AppliedJob = ({ appliedJob }) => {
             <div className='border rounded-md p-4 md:flex items-center justify-between gap-5 mb-5'>
                 <div className='flex items-center gap-5'>
                     <div className='h-48 rounded-md w-48 flex items-center justify-center bg-gray-50'>
-                        <img src={logo} alt="" />
+                        <img className='p-3' src={logo} alt="" />
                     </div>
                     <div>
                         <h5 className='text-2xl font-bold'>{jobTitle}</h5>
