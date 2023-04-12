@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className='flex flex-col md:flex-row items-center md:justify-between gap-2'>
+        <div className='flex flex-col md:flex-row items-center md:justify-between gap-3'>
             <div>
                 <Link to='/'>
                     <h5 className='text-4xl font-extrabold'>CareerZone</h5>

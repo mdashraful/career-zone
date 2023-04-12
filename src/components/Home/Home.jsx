@@ -23,7 +23,7 @@ const Home = () => {
                 <div className='grid lg:grid-cols-4 gap-5 md:grid-cols-2'>
                     <div className='bg-gray-50 p-8 rounded-md'>
                         <div className='mb-5 '>
-                            <img className='bg-gray-100 p-2 rounded' src="/public/Icons/accounts-1.png" alt="" />
+                            <img className='bg-gray-100 p-2 rounded' src="/Icons/accounts-1.png" alt="" />
                         </div>
                         <div>
                             <h6 className='font-bold text-xl mb-1'>300 Jobs Available</h6>
@@ -33,7 +33,7 @@ const Home = () => {
 
                     <div className='bg-gray-50 p-8 rounded-md'>
                         <div className='mb-5'>
-                            <img className='bg-gray-100 p-2 rounded' src="/public/Icons/business-1.png" alt="" />
+                            <img className='bg-gray-100 p-2 rounded' src="/Icons/business-1.png" alt="" />
                         </div>
                         <div>
                             <h6 className='font-bold text-xl mb-1'>Creative Design</h6>
@@ -43,7 +43,7 @@ const Home = () => {
 
                     <div className='bg-gray-50 p-8 rounded-md'>
                         <div className='mb-5'>
-                            <img className='bg-gray-100 p-2 rounded' src="/public/Icons/chip-1.png" alt="" />
+                            <img className='bg-gray-100 p-2 rounded' src="/Icons/chip-1.png" alt="" />
                         </div>
                         <div>
                             <h6 className='font-bold text-xl mb-1'>Marketing & Sales</h6>
@@ -53,7 +53,7 @@ const Home = () => {
 
                     <div className='bg-gray-50 p-8 rounded-md'>
                         <div className='mb-5'>
-                            <img className='bg-gray-100 p-2 rounded' src="/public/Icons/social-media-1.png" alt="" />
+                            <img className='bg-gray-100 p-2 rounded' src="/Icons/social-media-1.png" alt="" />
                         </div>
                         <div>
                             <h6 className='font-bold text-xl mb-1'>Engineering Job</h6>
